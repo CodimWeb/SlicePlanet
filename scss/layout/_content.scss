@@ -1,0 +1,154 @@
+.content {
+
+  @media (max-width: 767px) {
+    margin: 0 -15px;
+  }
+}
+
+.slick {
+  margin-top: 31px;
+
+  &-slide {
+    position: relative;
+
+    &__title {
+      position: absolute;
+      left: 72px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(210,166,107,0.8);
+      font-size: 42px;
+      color: #fff;
+      padding: 14px 50px 20px 30px;
+      line-height: 47px;
+
+      @media (max-width: 991px) {
+        font-size: 23px;
+        line-height: 23px;
+        left: 36px;
+        padding: 8px 39px 13px 18px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 15px;
+        line-height: 16px;
+        left: 24px;
+        padding: 6px 33px 5px 7px;
+      }
+    }
+
+    img {
+      width: 100%;
+
+      @media (max-width: 767px) {
+        max-width: 100%;
+        min-height: 125px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      max-height: 166px;
+    }
+
+    @media (max-width: 767px) {
+      height: 125px;
+    }
+  }
+
+  &-dots {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    padding: 0;
+
+    li {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #eedcc4;
+      margin: 0 11px;
+      list-style-type: none;
+      cursor: pointer;
+
+      button {
+        display: none;
+      }
+
+      &.slick-active {
+        background: #cb944c;
+      }
+    }
+  }
+
+  &-arrow {
+    width: 38px;
+    height: 128px;
+    background-color: rgba(210, 166, 107, 0.8);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: transparent;
+    overflow: hidden;
+    border: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 991px) {
+      width: 20px;
+      height: 66px;
+      background-size: 8px;
+    }
+
+    @media (max-width: 767px) {
+      width: 18px;
+      height: 28px;
+    }
+  }
+
+  &-prev {
+    left: 0;
+    background-image: url(../img/arrow-prev.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &:hover {
+      background-image: url(../img/arrow-prev-hover.png);
+    }
+  }
+
+  &-next {
+    right: 0;
+    background-image: url(../img/arrow-next.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &:hover {
+      background-image: url(../img/arrow-next-hover.png);
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin-left: -87px;
+    margin-right: -87px;
+  }
+
+  @media (max-width: 1199px) {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
+  @media (max-width: 991px) {
+    margin: 20px 0 0;
+  }
+
+  @media (max-width: 767px) {
+    margin: 15px 0 0;
+  }
+}

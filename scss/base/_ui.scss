@@ -1,0 +1,9 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 768px;
+  }
+}
